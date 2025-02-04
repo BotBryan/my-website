@@ -1,0 +1,26 @@
+h1 {
+   text-align: center;
+}
+
+li, h3 {
+    margin: 1%;
+    margin-left: 4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.extra {
+    color: #ff0000;
+}
+
+img {
+    margin-left: 45%;
+}
+
+a:hover {
+    color: #399a29;
+}
+
+footer>p {
+    font-weight: bold;
+    text-align: center;
+}
