@@ -1,3 +1,4 @@
+/* set listed emulator elements to a 2 list*/
 main>ul {
     column-count: 2;
 }
