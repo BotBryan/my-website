@@ -1,4 +1,6 @@
 /* set listed emulator elements to a 2 list*/
-main>ul {
+.content {
     column-count: 2;
 }
+
+
