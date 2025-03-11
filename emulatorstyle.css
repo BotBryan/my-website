@@ -1,6 +1,12 @@
-/* set listed emulator elements to a 2 list*/
-.content {
-    column-count: 2;
+table {
+    padding: 10%;
+    width: 100%;
+}
+
+table, th, td {
+    text-align: left;
+    padding: 5%;
+    border: 1px solid;
 }
 
 

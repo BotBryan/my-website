@@ -1,0 +1,4 @@
+If I had any critiques on the website, I'd start with looking at the color scheme, The burgundy on it's own is a great color, but when you're talking about dumping Nintendo ROMS specifically, and you're talking about the Gamecube/Wii, It might help be a visual indicator to go with the Gamecube's purple color scheme on that, and maybe bring back the Burgandy if you were gonna tackle the Super Famicom next.
+Additionally, I'd push getting the navigational elements to be bigger, with a transition to side to side, instead of top down as the screen size drops in, and then after it gets too small for even that, then go for the top down.
+
+I changed the colors to match a GameCube, and followed the recommendation to turn the nav bar column style within certain breakpoints.

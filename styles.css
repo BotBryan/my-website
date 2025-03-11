@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(to left, #ffffff, #571010 50%, #fdfbde);
+    background: linear-gradient(to left, #ffffff, rgb(105, 57, 153) 50%, #fdfbde);
 }
 
 .wrapper {
@@ -9,25 +9,25 @@ html {
 }
 
 .wrapper>* {
+    margin: 0;
     grid-column: col-start / span 12;
 }
 
 .main-head {
-    background-color: rgb(63, 2, 2);
+    font-family: orbitron;
+    background-color: rgb(105, 57, 153);
     text-align: center;
     color: rgb(238, 238, 224);
 }
 
 .main-nav {
-    background-color: rgb(238, 238, 224);
+    background-color: rgb(209, 209, 204);
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .main-nav>ul {
     list-style: none;
+    font-size: large;
 }
 
 .content {
@@ -40,7 +40,7 @@ html {
     font-weight: bold;
     text-align: center;
     color: rgb(238, 238, 224);
-    background-color: rgb(63, 2, 2);
+    background-color: rgb(105, 57, 153);
 }
 
 .main-footer>a {
@@ -53,10 +53,15 @@ html {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1639px) {
+@media only screen and (max-width: 1639px) and (min-width: 850px) {
     .main-nav {
-        justify-items: center;
+        justify-content: space-evenly;
     }
+    .main-nav li {
+        display: inline;
+        padding-left: 4%;
+    }
+    
 }
 
 @media only screen and (min-width: 1640px) {
@@ -64,6 +69,7 @@ html {
     .main-nav {
         grid-column: col-start / span 2;
         grid-row: 2 / 4;
+        justify-content: space-evenly;
     }
 
     .content {
@@ -97,11 +103,28 @@ html {
 
 }
 
+.smallimg2 {
+    display: block;
+    max-width: 200px;
+    border: 5px solid rgb(63, 2, 2);
+    border-radius: 10px;
+    margin: auto;
+
+}
+
 .imglist {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.gh {
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
