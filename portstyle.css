@@ -1,0 +1,25 @@
+/* split flexbox*/
+@media only screen and (min-width: 880px) {
+    .portflex {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "leftportimage rightport"
+            "leftportcost rightport";
+    }
+
+    .portflex>.leftportimage {
+        grid-area: leftportimage;
+    }
+
+    .portflex>.leftportcost {
+        grid-area: leftportcost;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .portflex>.rightport {
+        grid-area: rightport;
+    }
+}

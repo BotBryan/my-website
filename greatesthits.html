@@ -2,21 +2,26 @@
 <html>
 
 <head>
+    <!-- title font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- favicon-->
     <script src="https://kit.fontawesome.com/54c024cfec.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="https://www.shareicon.net/data/128x128/2016/03/24/450529_nintendo_32x32.png">
+    <link rel="icon" type="image/x-icon"
+        href="https://www.shareicon.net/data/128x128/2016/03/24/450529_nintendo_32x32.png">
     <title>Greatest Hits</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- link to base stylesheet and a grid sorter-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portstyle.css">
 </head>
 <div class="wrapper">
     <header class="main-head">
         <h1>Greatest Hits</h1>
     </header>
+    <!-- navigation menu-->
     <nav class="main-nav">
         <ul>
-            <li><span class="bold-text">Navigation</span></li>
             <li><a href="index.html"><i class="fa-solid fa-dice-one"></i> Home</a></li>
             <li><a href="emulators.html"><i class="fa-solid fa-dice-two"></i> Recommended Emulators</a></li>
             <li><a href="greatesthits.html"><i class="fa-solid fa-dice-three"></i> Greatest Hits</a></li>
@@ -24,150 +29,266 @@
         </ul>
     </nav>
     <article class="content">
+        <!-- every section is as follows: 
+            header
+            image sorted to a left side grid
+            list of games sorted to a right side grid-->
         <h3 class="gh">Arcade</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/1/1d/SF2_JPN_flyer.jpg" alt="streetfighter 2">
-        <ul>
-            <li>Street Fighter II</li>
-            <li>Pac-Man</li>
-            <li>Mortal Kombat II</li>
-            <li>Donkey Kong</li>
-            <li>Galaga</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimg">
+                <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/1/1d/SF2_JPN_flyer.jpg"
+                    alt="streetfighter 2">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Street Fighter II</li>
+                    <li>Pac-Man</li>
+                    <li>Mortal Kombat II</li>
+                    <li>Donkey Kong</li>
+                    <li>Galaga</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Atari 2600</h3>
-        <img class="smallimg2" src="https://now.estarland.com/images/products/4/27204/AT2600-Adventure-large-image.jpg" alt="adventure">
-        <ul>
-            <li>Adventure</li>
-            <li>Pitfall!</li>
-            <li>Space Invaders</li>
-            <li>River Raid</li>
-            <li>Asteroids</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimg">
+                <img class="smallimg2"
+                    src="https://now.estarland.com/images/products/4/27204/AT2600-Adventure-large-image.jpg"
+                    alt="adventure">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Adventure</li>
+                    <li>Pitfall!</li>
+                    <li>Space Invaders</li>
+                    <li>River Raid</li>
+                    <li>Asteroids</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">GB</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/c/c1/Link%27s_Awakening.png" alt="loz link's awakening">
-        <ul>
-            <li>The Legend of Zelda: Link's Awakening</li>
-            <li>Pokemon Red/Blue</li>
-            <li>Super Mario Land 2: 6 Golden Coins</li>
-            <li>Tetris</li>
-            <li>Metroid II: Return of Samus</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftport">
+                <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/c/c1/Link%27s_Awakening.png"
+                    alt="loz link's awakening">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>The Legend of Zelda: Link's Awakening</li>
+                    <li>Pokemon Red/Blue</li>
+                    <li>Super Mario Land 2: 6 Golden Coins</li>
+                    <li>Tetris</li>
+                    <li>Metroid II: Return of Samus</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">GBC</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/4/47/The_Legend_of_Zelda_Oracle_of_Seasons_and_Oracle_of_Ages_Game_Cover.png" alt="loz oracles">
-        <ul>
-            <li>The Legend of Zelda: Oracle of Ages/Seasons</li>
-            <li>Pokemon Gold/Silver</li>
-            <li>Super Mario Bros. Deluxe</li>
-            <li>Wario Land 3</li>
-            <li>Dragon Warrior III</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2"
+                    src="https://upload.wikimedia.org/wikipedia/en/4/47/The_Legend_of_Zelda_Oracle_of_Seasons_and_Oracle_of_Ages_Game_Cover.png"
+                    alt="loz oracles">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>The Legend of Zelda: Oracle of Ages/Seasons</li>
+                    <li>Pokemon Gold/Silver</li>
+                    <li>Super Mario Bros. Deluxe</li>
+                    <li>Wario Land 3</li>
+                    <li>Dragon Warrior III</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">GBA</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/8/83/The_Legend_of_Zelda_A_Link_to_the_Past_%26_Four_Swords_Game_Cover.jpg" alt="loz lttp and four swords">
-        <ul>
-            <li>The Legend of Zelda: A Link to the Past & Four Swords</li>
-            <li>Metroid Fusion</li>
-            <li>Castlevania: Aria of Sorrow</li>
-            <li>Advance Wars</li>
-            <li>Mario Kart: Super Circuit</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2"
+                    src="https://upload.wikimedia.org/wikipedia/en/8/83/The_Legend_of_Zelda_A_Link_to_the_Past_%26_Four_Swords_Game_Cover.jpg"
+                    alt="loz lttp and four swords">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>The Legend of Zelda: A Link to the Past & Four Swords</li>
+                    <li>Metroid Fusion</li>
+                    <li>Castlevania: Aria of Sorrow</li>
+                    <li>Advance Wars</li>
+                    <li>Mario Kart: Super Circuit</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">NEC TurboGrafx-16/CD</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/7/7b/Bonkadventure.jpg" alt="bonks adventure">
-        <ul>
-            <li>Bonk's Adventure</li>
-            <li>Rondo of Blood</li>
-            <li>Splatterhouse</li>
-            <li>Ninja Spirit</li>
-            <li>Gate of Thunder</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/7/7b/Bonkadventure.jpg"
+                    alt="bonks adventure">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Bonk's Adventure</li>
+                    <li>Rondo of Blood</li>
+                    <li>Splatterhouse</li>
+                    <li>Ninja Spirit</li>
+                    <li>Gate of Thunder</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Nintendo NES</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png" alt="smb 3">
-        <ul>
-            <li>Super Mario Bros. 3</li>
-            <li>The Legend of zelda</li>
-            <li>Metroid</li>
-            <li>Castlevania III: Dracula's Curse</li>
-            <li>Mega Man 2</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png" alt="smb 3">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Super Mario Bros. 3</li>
+                    <li>The Legend of zelda</li>
+                    <li>Metroid</li>
+                    <li>Castlevania III: Dracula's Curse</li>
+                    <li>Mega Man 2</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Nintendo SNES</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/71wfmH16Z8L.jpg" alt="loz lttp">
-        <ul>
-            <li>The Legend of Zelda: A Link to the Past</li>
-            <li>Super Mario World</li>
-            <li>Super Metroid</li>
-            <li>Chrono Trigger</li>
-            <li>Super Mario Kart</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/71wfmH16Z8L.jpg" alt="loz lttp">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>The Legend of Zelda: A Link to the Past</li>
+                    <li>Super Mario World</li>
+                    <li>Super Metroid</li>
+                    <li>Chrono Trigger</li>
+                    <li>Super Mario Kart</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Nintendo GameCube</h3>
-        <img class="smallimg2" src="https://www.zeldadungeon.net/wiki/images/2/22/WWBoxArt.jpg" alt="loz wind waker">
-        <ul>
-            <li>The Legend of Zelda: The Wind Waker</li>
-            <li>Super Smash Bros. Melee</li>
-            <li>Metroid Prime</li>
-            <li>Luigi's Mansion</li>
-            <li>Mario Kart: Double Dash!!</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://www.zeldadungeon.net/wiki/images/2/22/WWBoxArt.jpg"
+                    alt="loz wind waker">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>The Legend of Zelda: The Wind Waker</li>
+                    <li>Super Smash Bros. Melee</li>
+                    <li>Metroid Prime</li>
+                    <li>Luigi's Mansion</li>
+                    <li>Mario Kart: Double Dash!!</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Nintendo Wii</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/61bPXw4uvxL.jpg" alt="super mario galaxy">
-        <ul>
-            <li>Super Mario Galaxy</li>
-            <li>The Legend of Zelda: Twilight Princess</li>
-            <li>Super Smash Bros. Brawl</li>
-            <li>Metroid Prime 3: Corruption</li>
-            <li>Mario Kart Wii</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/61bPXw4uvxL.jpg"
+                    alt="super mario galaxy">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Super Mario Galaxy</li>
+                    <li>The Legend of Zelda: Twilight Princess</li>
+                    <li>Super Smash Bros. Brawl</li>
+                    <li>Metroid Prime 3: Corruption</li>
+                    <li>Mario Kart Wii</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sega Master System</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/71CZhVK5AQL.jpg" alt="alex kidd in miracle world">
-        <ul>
-            <li>Alex Kidd in Miracle World</li>
-            <li>Phantasy Star</li>
-            <li>Wonder Boy III: The Dragon's Trap</li>
-            <li>Shinobi</li>
-            <li>Rastan</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/71CZhVK5AQL.jpg"
+                    alt="alex kidd in miracle world">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Alex Kidd in Miracle World</li>
+                    <li>Phantasy Star</li>
+                    <li>Wonder Boy III: The Dragon's Trap</li>
+                    <li>Shinobi</li>
+                    <li>Rastan</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sega Game Gear</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/61eCECLJ0iL._AC_UF1000,1000_QL80_.jpg" alt="sonic">
-        <ul>
-            <li>Sonic the Hedgehog</li>
-            <li>Shining Force: The Sword of Hajya</li>
-            <li>Ninja Gaiden</li>
-            <li>Streets of Rage</li>
-            <li>Power Rangers: The Movie</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/61eCECLJ0iL._AC_UF1000,1000_QL80_.jpg"
+                    alt="sonic">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Sonic the Hedgehog</li>
+                    <li>Shining Force: The Sword of Hajya</li>
+                    <li>Ninja Gaiden</li>
+                    <li>Streets of Rage</li>
+                    <li>Power Rangers: The Movie</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sega Genesis</h3>
-        <img class="smallimg2" src="https://i.ebayimg.com/images/g/bkoAAOSwKWhkQLkt/s-l1200.jpg" alt="sonic 2">
-        <ul>
-            <li>Sonic the Hedgehog 2</li>
-            <li>Streets of Rage 2</li>
-            <li>Gunstar Heroes</li>
-            <li>Phantasy Star IV</li>
-            <li>Shining Force II</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://i.ebayimg.com/images/g/bkoAAOSwKWhkQLkt/s-l1200.jpg" alt="sonic 2">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Sonic the Hedgehog 2</li>
+                    <li>Streets of Rage 2</li>
+                    <li>Gunstar Heroes</li>
+                    <li>Phantasy Star IV</li>
+                    <li>Shining Force II</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sega CD</h3>
-        <img class="smallimg2" src="https://upload.wikimedia.org/wikipedia/en/e/e1/Sonic_CD_North_American_cover_art.jpg" alt="sonic cd">
-        <ul>
-            <li>Sonic CD</li>
-            <li>Lunar: Silver Star Story</li>
-            <li>Snatcher</li>
-            <li>Mansion of Hidden Souls</li>
-            <li>Silpheed</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2"
+                    src="https://upload.wikimedia.org/wikipedia/en/e/e1/Sonic_CD_North_American_cover_art.jpg"
+                    alt="sonic cd">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Sonic CD</li>
+                    <li>Lunar: Silver Star Story</li>
+                    <li>Snatcher</li>
+                    <li>Mansion of Hidden Souls</li>
+                    <li>Silpheed</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sony PSX</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/71350ljw7SL.jpg" alt="ffvii">
-        <ul>
-            <li>Final Fantasy VII</li>
-            <li>Metal Gear Solid</li>
-            <li>Castlevania: Symphony of the Night</li>
-            <li>Gran Turismo</li>
-            <li>Crash Bandicoot: Warped</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/71350ljw7SL.jpg" alt="ffvii">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Final Fantasy VII</li>
+                    <li>Metal Gear Solid</li>
+                    <li>Castlevania: Symphony of the Night</li>
+                    <li>Gran Turismo</li>
+                    <li>Crash Bandicoot: Warped</li>
+                </ul>
+            </div>
+        </div>
         <h3 class="gh">Sony PS2</h3>
-        <img class="smallimg2" src="https://m.media-amazon.com/images/I/61OtqAb3LxL.jpg" alt="gta san andreas">
-        <ul>
-            <li>Grand Theft Auto: San Andreas</li>
-            <li>Final Fantasy X</li>
-            <li>Metal Gear Solid 2: Sons of Liberty</li>
-            <li>Shadow of the Colossus</li>
-            <li>God of War</li>
-        </ul>
+        <div class="portflex">
+            <div class="leftportimage">
+                <img class="smallimg2" src="https://m.media-amazon.com/images/I/61OtqAb3LxL.jpg" alt="gta san andreas">
+            </div>
+            <div class="rightport">
+                <ul>
+                    <li>Grand Theft Auto: San Andreas</li>
+                    <li>Final Fantasy X</li>
+                    <li>Metal Gear Solid 2: Sons of Liberty</li>
+                    <li>Shadow of the Colossus</li>
+                    <li>God of War</li>
+                </ul>
+            </div>
+        </div>
     </article>
     <footer class="main-footer">&reg; All Rights Reserved</p>
         <a href="#">Return to Top</a>

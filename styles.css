@@ -1,7 +1,9 @@
+/* background gradient*/
 html {
     background: linear-gradient(to left, #ffffff, rgb(105, 57, 153) 50%, #fdfbde);
 }
 
+/* grid display setup*/
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
@@ -13,6 +15,7 @@ html {
     grid-column: col-start / span 12;
 }
 
+/* styling*/
 .main-head {
     font-family: orbitron;
     background-color: rgb(105, 57, 153);
@@ -53,18 +56,22 @@ html {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1639px) and (min-width: 850px) {
+/* middle grid display*/
+@media only screen and (max-width: 1918px) and (min-width: 850px) {
     .main-nav {
         justify-content: space-evenly;
+        text-align: center;
     }
     .main-nav li {
-        display: inline;
+        display: inline-block;
+        text-align: left;
         padding-left: 4%;
     }
     
 }
 
-@media only screen and (min-width: 1640px) {
+/* large grid display*/
+@media only screen and (min-width: 1919px) {
 
     .main-nav {
         grid-column: col-start / span 2;
@@ -86,6 +93,11 @@ html {
     color: #ff0000;
 }
 
+a:hover {
+    color: #399a29;
+}
+
+/* image borders and styling*/
 .mainimage {
     max-width: 25%;
     border: 10px solid rgb(63, 2, 2);
@@ -143,8 +155,4 @@ li {
     .smallimg {
         max-width: 125px;
     }
-}
-
-a:hover {
-    color: #399a29;
 }
